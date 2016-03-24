@@ -1,0 +1,12 @@
+.btn-on {
+  background-color: lawngreen;
+}
+
+.btn-off {
+  background-color: red;
+}
+
+.disabled {
+  color: gray;
+  border: medium solid gray;
+}

@@ -1,0 +1,4 @@
+<div class="btn-group btn-toggle">
+  <button class="btn btn-sm" [disabled]="buttonOn" [ngClass]="{'btn-on': buttonOn}" (click)="toggle()">ON</button>
+  <button class="btn btn-sm" [disabled]="!buttonOn" [ngClass]="{'btn-off': !buttonOn}" (click)="toggle()">OFF</button>
+</div>
