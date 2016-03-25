@@ -1,4 +1,4 @@
-System.register(["angular2/core", "../button/switch.button.component"], function(exports_1, context_1) {
+System.register(["angular2/core"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,34 +10,28 @@ System.register(["angular2/core", "../button/switch.button.component"], function
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, switch_button_component_1;
-    var LargeWell;
+    var core_1;
+    var MainRoute;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (switch_button_component_1_1) {
-                switch_button_component_1 = switch_button_component_1_1;
             }],
         execute: function() {
-            LargeWell = (function () {
-                function LargeWell() {
+            MainRoute = (function () {
+                function MainRoute() {
                 }
-                LargeWell = __decorate([
+                MainRoute = __decorate([
                     core_1.Component({
-                        selector: "large-well",
-                        templateUrl: "src/well/large.well.component.html",
-                        styleUrls: ["src/well/large.well.component.css"],
-                        directives: [
-                            switch_button_component_1.ButtonSwitch
-                        ]
+                        selector: "main-route",
+                        templateUrl: "src/route/main.route.component.html",
+                        styleUrls: ["src/route/mainmainroute.component.css"]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], LargeWell);
-                return LargeWell;
+                ], MainRoute);
+                return MainRoute;
             }());
-            exports_1("LargeWell", LargeWell);
+            exports_1("MainRoute", MainRoute);
         }
     }
 });
