@@ -10,13 +10,26 @@
     "url": "https://github.com/Healforgreen/angular2-sandbox/issues"
   },
   "homepage": "https://github.com/Healforgreen/angular2-sandbox#readme",
+  "scripts": {
+    "clean": "rimraf src/**/*.js src/**/*.js.map",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "serve": "http-server -p 9090 -c-1",
+    "test": "karma start karma.conf.js"
+  },
   "devDependencies": {
     "connect": "^3.4.0",
     "del": "^1.2.0",
     "gulp": "^3.9.0",
     "gulp-typescript": "^2.8.0",
     "open": "0.0.5",
-    "serve-static": "^1.10.0"
+    "serve-static": "^1.10.0",
+    "jasmine": "2.3.2",
+    "karma": "^0.12.23",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-cli": "^0.0.4",
+    "karma-jasmine": "^0.3.6",
+    "rimraf": "^2.4.3"
   },
   "dependencies": {
     "angular2": "2.0.0-beta.9",
